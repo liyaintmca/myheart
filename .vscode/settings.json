@@ -1,0 +1,11 @@
+{
+    "html-css-class-completion.enableEmmetSupport": true,
+    "editor.defaultFormatter": "AndersEAndersen.html-class-suggestions",
+    "notebook.defaultFormatter": "AndersEAndersen.html-class-suggestions",
+    "emmet.useInlineCompletions": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "vue-html": "html"
+    }
+}

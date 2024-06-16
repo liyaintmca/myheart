@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>My First Web Page</title>
+        <link rel="stylesheet" href="stylehtml.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+            <a href="#" class="logo">Bakery<span> </span></a>
+            <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                 <a href="#">Home</a> 
+                 <a href="#">About</a> 
+                 <a href="#">Products</a> 
+                 <a href="#">Contact Us</a> 
+                 <a href="#">Testimonials</a> 
+            </ul>
+            <span id="menu-btn" class="material-symbols-outlined">menu</span>
+            </nav>
+        </header>
+        <section class="middle-section">
+            <div class="content">
+                <h1>Slice Of Heaven</h1>
+                <p>Any celebration, whether a cozy gathering or an extravagent party, is incomplete without cake! We offer a wide range of handcrafted speciality cakes that are a treat to the eyes and also the taste buds.</p>
+                <button>Order Now</button>
+            </div>
+        </section>
+        <script>
+            const header=document.querySelector("header");
+            const menubtn=document.querySelector("#menu-btn");
+            const closemenubtn=document.querySelector("#close-menu-btn");
+            menubtn.addEventListener("click",()=> {
+               header.classList.toggle("show-mobile-menu");
+            })
+            closemenubtn.addEventListener("click",()=> {
+               menubtn.click();
+            })
+        </script>
+    </body>       
+</html>
